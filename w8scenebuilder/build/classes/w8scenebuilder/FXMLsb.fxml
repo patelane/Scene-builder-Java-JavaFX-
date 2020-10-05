@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.85" prefHeight="573.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="w8scenebuilder.FXMLsbController">
+   <children>
+      <ImageView fitHeight="564.0" fitWidth="712.0" layoutX="6.0" layoutY="5.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@th.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnadd" layoutX="335.0" layoutY="202.0" mnemonicParsing="false" onAction="#addition" text="Addition" textFill="#5518ed" />
+      <Button fx:id="btnclear" layoutX="335.0" layoutY="303.0" mnemonicParsing="false" onAction="#clear" text="clear" />
+      <Button fx:id="btnmul" layoutX="335.0" layoutY="249.0" mnemonicParsing="false" onAction="#multiplication" text="Multiplication" />
+      <Button fx:id="btnexit" layoutX="335.0" layoutY="355.0" mnemonicParsing="false" onAction="#exit" text="exit" />
+      <Label layoutX="44.0" layoutY="34.0" text="Enter first number" textFill="#b21b1b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="44.0" layoutY="92.0" text="Enter second number" textFill="#d31a1a">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="144.0" text="Result" textFill="#d71010">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfirst" layoutX="261.0" layoutY="39.0" />
+      <TextField fx:id="txtres" layoutX="267.0" layoutY="148.0" />
+      <TextField fx:id="txtsecond" layoutX="267.0" layoutY="96.0" />
+      <TextArea fx:id="tarea" layoutX="91.0" layoutY="202.0" prefHeight="200.0" prefWidth="200.0" />
+      <CheckBox fx:id="chkadd" layoutX="470.0" layoutY="206.0" mnemonicParsing="false" onAction="#chkaddition" text="addition" textFill="#46cde3" />
+      <RadioButton fx:id="radadd" layoutX="470.0" layoutY="253.0" mnemonicParsing="false" onAction="#radaddition" text="add" />
+      <RadioButton fx:id="radmult" layoutX="470.0" layoutY="294.0" mnemonicParsing="false" onAction="#radmultiplication" text="mult" />
+      <ComboBox fx:id="cmb" layoutX="103.0" layoutY="430.0" onAction="#cmbevent" prefWidth="150.0" />
+      <ListView fx:id="lview" layoutX="403.0" layoutY="328.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="btnimg" layoutX="503.0" layoutY="52.0" mnemonicParsing="false" onAction="#btnimgchange" style="-fx-background-color: blue;" text="Click to change image">
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ttt.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="imgview" fitHeight="99.0" fitWidth="200.0" layoutX="541.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tt.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
